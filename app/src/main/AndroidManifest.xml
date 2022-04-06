@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoToSlim">
         <activity
+            android:name=".Suivi"
+            android:exported="false" />
+        <activity
+            android:name=".Succes"
+            android:exported="false" />
+        <activity
+            android:name=".StatEtPoids"
+            android:exported="false" />
+        <activity
+            android:name=".conseil.boisson.BoissonListActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".conseil.boisson.BoissonActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".conseil.ConseilsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecherchePlat"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/textConseil"
+        android:layout_width="225dp"
+        android:layout_height="63dp"
+        android:text="Nos conseils"
+        android:textColor="@color/black"
+        android:textSize="100px"
+        android:layout_marginBottom="100px"
+         />
+
+    <Button
+        android:id="@+id/boisson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="boissons"
+        app:icon="@drawable/verre"
+        app:backgroundTint="#900C3F"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        />
+
+    <Button
+        android:id="@+id/entrée"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrées"
+        app:icon="@drawable/plat"
+        app:backgroundTint="#93C47D"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        />
+
+    <Button
+        android:id="@+id/plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plats"
+        app:icon="@drawable/plat"
+        app:backgroundTint="#6FA8DC"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        />
+
+    <Button
+        android:id="@+id/dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:text="Desserts"
+        android:textSize="20sp"
+        app:backgroundTint="#FF9900"
+        app:icon="@drawable/dessert"
+        app:iconSize="50dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="100px"
+        />
+
+</LinearLayout>
+
+

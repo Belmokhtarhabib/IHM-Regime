@@ -1,18 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/app_name"
+        android:textColor="#4169F1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progression"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="269dp"
+        android:layout_height="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_style"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        />
+
+    <Button
+        android:id="@+id/recherchePlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cherche_plat"
+        app:icon="@drawable/magnify"
+        app:backgroundTint="#900C3F"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        />
+
+    <Button
+        android:id="@+id/conseils"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conseil_titre"
+        app:icon="@drawable/hand_heart"
+        app:backgroundTint="#93C47D"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        />
+
+    <Button
+        android:id="@+id/suivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suivi"
+        app:icon="@drawable/calendar_range"
+        app:backgroundTint="#6FA8DC"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        />
+
+    <Button
+        android:id="@+id/statsEtPoids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stat_poids"
+        app:icon="@drawable/chart_line"
+        app:backgroundTint="#FF9900"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        />
+
+    <Button
+        android:id="@+id/succes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/succes"
+        app:icon="@drawable/trophy"
+        app:backgroundTint="#FFD966"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:textSize="20sp"
+        android:width="300dp"
+        />
+</LinearLayout>
+

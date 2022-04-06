@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1615" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
         <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/acitivity_nosconseils.xml" value="0.2" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_boisson.xml" value="0.16041666666666668" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_conseils.xml" value="0.2" />
         <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_nosconseils.xml" value="0.22" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/boisson_layout.xml" value="0.16041666666666668" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/conseilboisson_activity.xml" value="0.15" />
         <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/nosconseils_activity.xml" value="0.1859375" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/recetteboisson_activity.xml" value="0.16041666666666668" />
       </map>
     </option>
   </component>
