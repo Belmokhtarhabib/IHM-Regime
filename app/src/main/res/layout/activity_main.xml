@@ -5,7 +5,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        app:srcCompat="@drawable/cog"
+        app:fabSize="normal"
+        app:backgroundTint="#4169F1"
+        app:tint="#FFFFFF"
+        android:layout_margin="16dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,9 +40,9 @@
 
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="269dp"
-        android:layout_height="42dp" />
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,62 +52,92 @@
         android:textSize="40sp"
         />
 
-    <Button
-        android:id="@+id/recherchePlat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cherche_plat"
-        app:icon="@drawable/magnify"
-        app:backgroundTint="#900C3F"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:isScrollContainer="true">
 
-    <Button
-        android:id="@+id/conseils"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/conseil_titre"
-        app:icon="@drawable/hand_heart"
-        app:backgroundTint="#93C47D"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        />
 
-    <Button
-        android:id="@+id/suivi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/suivi"
-        app:icon="@drawable/calendar_range"
-        app:backgroundTint="#6FA8DC"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        />
+            <Button
+                android:id="@+id/recherchePlat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cherche_plat"
+                app:icon="@drawable/magnify"
+                app:backgroundTint="#900C3F"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:iconSize="50dp"
+                android:textSize="20sp"
+                android:width="300dp"
+                />
 
-    <Button
-        android:id="@+id/statsEtPoids"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stat_poids"
-        app:icon="@drawable/chart_line"
-        app:backgroundTint="#FF9900"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        />
+            <Button
+                android:id="@+id/conseils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conseil_titre"
+                app:icon="@drawable/hand_heart"
+                app:backgroundTint="#93C47D"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:iconSize="50dp"
+                android:textSize="20sp"
+                android:width="300dp"
+                />
 
+            <Button
+                android:id="@+id/suivi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suivi"
+                app:icon="@drawable/calendar_range"
+                app:backgroundTint="#6FA8DC"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:iconSize="50dp"
+                android:textSize="20sp"
+                android:width="300dp"
+                />
+
+            <Button
+                android:id="@+id/statsEtPoids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_poids"
+                app:icon="@drawable/chart_line"
+                app:backgroundTint="#FF9900"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:iconSize="50dp"
+                android:textSize="20sp"
+                android:width="300dp"
+                />
+
+            <Button
+                android:id="@+id/succes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/succes"
+                app:icon="@drawable/trophy"
+                app:backgroundTint="#FFD966"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:iconSize="50dp"
+                android:textSize="20sp"
+                android:width="300dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+<<<<<<< HEAD
     <Button
         android:id="@+id/succes"
         android:layout_width="wrap_content"
@@ -110,3 +153,6 @@
         />
 </LinearLayout>
 
+=======
+</LinearLayout>
+>>>>>>> b274be832058b5c224a766cbd6cfb32e433453fb

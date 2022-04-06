@@ -7,4 +7,6 @@
     <string name="stat_poids">Stats et poids</string>
     <string name="succes">Succès</string>
     <string name="cherche_plat">Rechercher un plat</string>
+    <string name="conseil_zone_text">Entrer un plat ...</string>
+    <string name="nouveau_poids">Nouveau Poids</string>
 </resources>
