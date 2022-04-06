@@ -1,9 +1,10 @@
-package edu.polytech.gotoslim;
-
-import androidx.appcompat.app.AppCompatActivity;
+package edu.polytech.gotoslim.statetpoid;
 
 import android.os.Bundle;
 import android.view.ViewGroup;
+
+import edu.polytech.gotoslim.Header;
+import edu.polytech.gotoslim.R;
 
 public class StatEtPoids extends Header {
 

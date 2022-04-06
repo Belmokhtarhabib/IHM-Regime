@@ -6,10 +6,8 @@ import android.content.Intent;
 import android.view.Window;
 import android.os.Bundle;
 import android.widget.ProgressBar;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
+
+import edu.polytech.gotoslim.statetpoid.StatEtPoids;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.suivi).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,Suivi.class)));
 
-        findViewById(R.id.statsEtPoids).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,StatEtPoids.class)));
+        findViewById(R.id.statsEtPoids).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this, StatEtPoids.class)));
 
         findViewById(R.id.succes).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,Succes.class)));
 

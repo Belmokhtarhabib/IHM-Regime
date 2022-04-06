@@ -19,7 +19,7 @@
             android:name=".Succes"
             android:exported="false" />
         <activity
-            android:name=".StatEtPoids"
+            android:name=".statetpoid.StatEtPoids"
             android:exported="false" />
         <activity
             android:name=".Conseils"
