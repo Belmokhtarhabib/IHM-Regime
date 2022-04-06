@@ -4,33 +4,36 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    >
 
 
     <TextView
         android:id="@+id/textConseil"
         android:layout_width="225dp"
         android:layout_height="63dp"
+        android:layout_marginBottom="15px"
         android:text="Nos conseils"
         android:textColor="@color/black"
-        android:textSize="100px"
-        android:layout_marginBottom="100px"
-         />
+        android:textSize="100px" />
+
 
     <Button
         android:id="@+id/boisson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="boissons"
+        android:text="Boissons"
         app:icon="@drawable/verre"
+        android:background="#900C3F"
         app:backgroundTint="#900C3F"
         app:strokeColor="#000000"
         app:strokeWidth="2dp"
         app:iconSize="50dp"
         android:textSize="20sp"
         android:width="300dp"
-        android:layout_marginTop="100px"
-        android:layout_marginBottom="100px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:height="75dp"
         />
 
     <Button
@@ -45,8 +48,9 @@
         app:iconSize="50dp"
         android:textSize="20sp"
         android:width="300dp"
-        android:layout_marginTop="100px"
-        android:layout_marginBottom="100px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:height="75dp"
         />
 
     <Button
@@ -61,24 +65,27 @@
         app:iconSize="50dp"
         android:textSize="20sp"
         android:width="300dp"
-        android:layout_marginTop="100px"
-        android:layout_marginBottom="100px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:height="75dp"
         />
 
     <Button
         android:id="@+id/dessert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
         android:width="300dp"
+        android:height="75dp"
         android:text="Desserts"
         android:textSize="20sp"
         app:backgroundTint="#FF9900"
         app:icon="@drawable/dessert"
         app:iconSize="50dp"
         app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        android:layout_marginTop="100px"
-        />
+        app:strokeWidth="2dp" />
+
+
 
 </LinearLayout>
 

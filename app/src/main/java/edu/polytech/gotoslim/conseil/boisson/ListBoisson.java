@@ -11,6 +11,17 @@ public class ListBoisson extends ArrayList<Boisson>{
 
     public ListBoisson(){
         add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Boisson("Jus de bétrave", R.drawable.jusbetrave));
 
     }
 }

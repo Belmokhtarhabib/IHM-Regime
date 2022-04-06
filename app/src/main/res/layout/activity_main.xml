@@ -137,22 +137,5 @@
     </ScrollView>
 
 
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/succes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/succes"
-        app:icon="@drawable/trophy"
-        app:backgroundTint="#FFD966"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        />
 </LinearLayout>
 
-=======
-</LinearLayout>
->>>>>>> b274be832058b5c224a766cbd6cfb32e433453fb

@@ -26,7 +26,11 @@ public class ConseilsActivity extends Header {
     {
         super.onCreate(savedInstanceState);
         ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
+        //setContentView(R.layout.activity_conseils);
+
+
         ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
+        findViewById(R.id.boisson).setOnClickListener(v1 -> startActivity(new Intent(ConseilsActivity.this,BoissonListActivity.class)));
     }
 
 
