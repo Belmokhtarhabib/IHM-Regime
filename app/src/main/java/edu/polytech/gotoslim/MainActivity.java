@@ -22,6 +22,5 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.statsEtPoids).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,StatEtPoids.class)));
 
         findViewById(R.id.succes).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,Succes.class)));
-
     }
 }
