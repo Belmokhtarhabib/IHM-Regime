@@ -5,14 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.Window;
 import android.os.Bundle;
-<<<<<<< HEAD
 
 import edu.polytech.gotoslim.conseil.ConseilsActivity;
-=======
 import android.widget.ProgressBar;
 
 import edu.polytech.gotoslim.statetpoid.StatEtPoids;
->>>>>>> b274be832058b5c224a766cbd6cfb32e433453fb
 
 public class MainActivity extends AppCompatActivity {
 
