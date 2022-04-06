@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">GoToSlim</string>
+    <string name="app_name">Go To Slim</string>
+    <string name="progression">Votre progression</string>
+    <string name="menu_style">------ Menu ------</string>
+    <string name="conseil_titre">Nos conseils</string>
+    <string name="suivi">Mon suivi</string>
+    <string name="stat_poids">Stats et poids</string>
+    <string name="succes">Succès</string>
+    <string name="cherche_plat">Rechercher un plat</string>
 </resources>

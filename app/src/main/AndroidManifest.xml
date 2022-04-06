@@ -13,6 +13,21 @@
             android:name=".Parametres"
             android:exported="false" />
         <activity
+            android:name=".Suivi"
+            android:exported="false" />
+        <activity
+            android:name=".Succes"
+            android:exported="false" />
+        <activity
+            android:name=".StatEtPoids"
+            android:exported="false" />
+        <activity
+            android:name=".Conseils"
+            android:exported="false" />
+        <activity
+            android:name=".RecherchePlat"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
