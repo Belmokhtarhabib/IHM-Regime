@@ -3,15 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/account_circle.xml" value="0.1515" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/calendar_range.xml" value="0.1225" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/chart_line.xml" value="0.2275" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/cog.xml" value="0.208" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/hand_heart.xml" value="0.1225" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/magnify.xml" value="0.1515" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/trophy.xml" value="0.1225" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_parametres.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/drawable/account_circle.xml" value="0.3635" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/drawable/calendar_range.xml" value="0.3635" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2685" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_stat_et_poids.xml" value="0.3625" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2685" />
       </map>
     </option>
   </component>
