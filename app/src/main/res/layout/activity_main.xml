@@ -5,7 +5,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        app:srcCompat="@drawable/cog"
+        app:fabSize="normal"
+        app:backgroundTint="#4169F1"
+        app:tint="#FFFFFF"
+        android:layout_margin="16dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,9 +40,9 @@
 
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="269dp"
-        android:layout_height="42dp" />
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
