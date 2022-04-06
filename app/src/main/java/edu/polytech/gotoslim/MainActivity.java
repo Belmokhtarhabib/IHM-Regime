@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.statsEtPoids).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,StatEtPoids.class)));
 
         findViewById(R.id.succes).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,Succes.class)));
+
         ProgressBar pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setProgress(90);
     }
