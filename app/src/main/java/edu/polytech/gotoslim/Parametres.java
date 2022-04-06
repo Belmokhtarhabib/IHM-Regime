@@ -2,12 +2,15 @@ package edu.polytech.gotoslim;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ViewGroup;
 
-public class Parametres extends AppCompatActivity {
+public class Parametres extends Header {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parametres);
+        ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
+        ViewGroup.inflate(Parametres.this, R.layout.activity_parametres, vg);
     }
 }
