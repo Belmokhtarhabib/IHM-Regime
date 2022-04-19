@@ -28,6 +28,12 @@
             android:name=".conseil.boisson.BoissonActivity"
             android:exported="false"/>
         <activity
+            android:name=".conseil.plat.PlatListActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".conseil.plat.PlatActivity"
+            android:exported="false"/>
+        <activity
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
         <activity

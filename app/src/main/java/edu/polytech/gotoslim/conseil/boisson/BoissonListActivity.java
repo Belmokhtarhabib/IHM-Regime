@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import edu.polytech.gotoslim.R;
 
-public class BoissonListActivity extends AppCompatActivity {
+public class BoissonListActivity extends AppCompatActivity implements Ilistener {
 
 
     @Override
@@ -33,7 +33,7 @@ public class BoissonListActivity extends AppCompatActivity {
         list.setAdapter(adapter);
     }
 
-    //@Override
+    @Override
     public void onClickBoisson(Boisson item){
         Intent intent = new Intent(getApplicationContext(), BoissonActivity.class);
         intent.putExtra(BOISSON, (Parcelable) item);

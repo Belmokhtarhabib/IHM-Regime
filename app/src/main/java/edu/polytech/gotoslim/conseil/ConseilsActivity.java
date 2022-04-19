@@ -18,6 +18,8 @@ import edu.polytech.gotoslim.conseil.boisson.BoissonActivity;
 import edu.polytech.gotoslim.conseil.boisson.BoissonAdapter;
 import edu.polytech.gotoslim.conseil.boisson.BoissonListActivity;
 import edu.polytech.gotoslim.conseil.boisson.ListBoisson;
+import edu.polytech.gotoslim.conseil.plat.PlatActivity;
+import edu.polytech.gotoslim.conseil.plat.PlatListActivity;
 
 public class ConseilsActivity extends Header {
 
@@ -31,6 +33,8 @@ public class ConseilsActivity extends Header {
 
         ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
         findViewById(R.id.boisson).setOnClickListener(v1 -> startActivity(new Intent(ConseilsActivity.this,BoissonListActivity.class)));
+
+        findViewById(R.id.plat).setOnClickListener(v1 -> startActivity(new Intent(ConseilsActivity.this, PlatListActivity.class)));
     }
 
 
