@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoToSlim" >
         <activity
-            android:name=".Parametres"
+            android:name=".ModifierRegimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParametresActivity"
             android:exported="false" />
         <activity
             android:name=".Suivi"
@@ -23,16 +26,16 @@
             android:exported="false" />
         <activity
             android:name=".conseil.boisson.BoissonListActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".conseil.boisson.BoissonActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".conseil.plat.PlatListActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".conseil.plat.PlatActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
