@@ -1,20 +1,18 @@
-package edu.polytech.gotoslim.conseil.plat;
+package edu.polytech.gotoslim.conseil.listCreation;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Plat implements Parcelable {
-
-
+public class Meal implements Parcelable {
     String name;
     int picture;
 
-    public Plat(String name, int picture) {
+    public Meal(String name, int picture) {
         this.name = name;
         this.picture =picture;
     }
 
-    protected Plat(Parcel in) {
+    protected Meal(Parcel in) {
         name = in.readString();
         picture = in.readInt();
     }
@@ -30,15 +28,15 @@ public class Plat implements Parcelable {
         return 0;
     }
 
-    public static final Creator<Plat> CREATOR = new Creator<Plat>() {
+    public static final Creator<Meal> CREATOR = new Creator<Meal>() {
         @Override
-        public Plat createFromParcel(Parcel in) {
-            return new Plat(in);
+        public Meal createFromParcel(Parcel in) {
+            return new Meal(in);
         }
 
         @Override
-        public Plat[] newArray(int size) {
-            return new Plat[size];
+        public Meal[] newArray(int size) {
+            return new Meal[size];
         }
     };
 
@@ -47,5 +45,4 @@ public class Plat implements Parcelable {
     }
 
     public int getPicture(){ return picture; }
-
 }

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ParametresActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <EditText
+        android:id="@+id/EvenementDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Description"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EvenementName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textModifierMonRegime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="88dp"
+        android:layout_weight="1"
+        android:text="Modifier Mon régime"
+        android:textSize="100px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textModifierMonRegime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_weight="1"
+        android:text="Ajouter un évènement au calendrier lié à votre régime"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierMonRegime2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addEvent"
+        android:layout_width="263dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="60dp"
+        android:text="ajouter cet événement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EvenementDate"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/EvenementName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textModifierMonRegime"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/EvenementDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EvenementDescription"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

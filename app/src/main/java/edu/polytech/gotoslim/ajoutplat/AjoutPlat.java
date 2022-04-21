@@ -2,7 +2,6 @@ package edu.polytech.gotoslim.ajoutplat;
 
 import static edu.polytech.gotoslim.NotificationChannelGTS.CHANNEL_ID;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
@@ -10,7 +9,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -19,7 +17,6 @@ import android.widget.Toast;
 
 import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.R;
-import edu.polytech.gotoslim.RecherchePlat;
 
 public class AjoutPlat extends Header {
 
@@ -28,9 +25,11 @@ public class AjoutPlat extends Header {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
         ViewGroup.inflate(AjoutPlat.this, R.layout.activity_ajout_plat, vg);
+
         findViewById(R.id.ajout_envoyer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,38 +38,30 @@ public class AjoutPlat extends Header {
             }
         });
 
-        //set listeners
         findViewById(R.id.button_image).setOnClickListener( click -> {
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);   // Create an implicit intent, for image capture
             startActivityForResult(intent, PermissionFactory.REQUEST_ID_IMAGE_CAPTURE);      // Start camera and wait for the results.
         });
-
     }
 
     private void sendNotificationOnChannel(String nomPlat, String channelId, int priority) {
+
         NotificationCompat.Builder notification = new NotificationCompat.Builder(getApplicationContext(),channelId)
                 .setSmallIcon(R.drawable.plus_circle)
                 .setContentTitle("Demande envoyée !")
-                .setContentText("Votre " + nomPlat.toLowerCase() + " nous as bien été envoyée !")
+                .setContentText("Votre " + nomPlat.toLowerCase() + " nous a bien été envoyée !")
                 .setPriority(priority)
                 .setLargeIcon(picture)
                 .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(picture).bigLargeIcon(null));
+
         NotificationManagerCompat.from(this).notify(++notificationId,notification.build());
     }
 
-    /**
-     * callback from camera activity
-     * The Android Camera application encodes the photo in the return Intent delivered to onActivityResult()
-     * as a small Bitmap in the extras, under the key "data"  ---> BEURK!!!  no constant!
-     *https://developer.android.com/training/camera/photobasics
-     *
-     * @param requestCode
-     * @param resultCode
-     * @param data
-     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == PermissionFactory.REQUEST_ID_IMAGE_CAPTURE) {
             switch (resultCode) {
                 case RESULT_OK:

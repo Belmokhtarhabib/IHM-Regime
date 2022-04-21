@@ -14,7 +14,10 @@
             android:name=".ajoutplat.AjoutPlat"
             android:exported="false" />
         <activity
-            android:name=".Parametres"
+            android:name=".ModifierRegimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParametresActivity"
             android:exported="false" />
         <activity
             android:name=".Suivi"
@@ -26,22 +29,13 @@
             android:name=".statetpoid.StatEtPoids"
             android:exported="false" />
         <activity
-            android:name=".conseil.boisson.BoissonListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".conseil.boisson.BoissonActivity"
-            android:exported="false" />
-        <activity
-            android:name=".conseil.plat.PlatListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".conseil.plat.PlatActivity"
+            android:name=".conseil.MealListActivity"
             android:exported="false" />
         <activity
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
         <activity
-            android:name=".RecherchePlat"
+            android:name=".recherchePlat.RecherchePlat"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
