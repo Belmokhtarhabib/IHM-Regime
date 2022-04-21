@@ -9,6 +9,7 @@ import android.os.Bundle;
 import edu.polytech.gotoslim.conseil.ConseilsActivity;
 import android.widget.ProgressBar;
 
+import edu.polytech.gotoslim.recherchePlat.RecherchePlat;
 import edu.polytech.gotoslim.statetpoid.StatEtPoids;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MainActivity.this,Parametres.class)));
 
-        findViewById(R.id.recherchePlat).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this,RecherchePlat.class)));
+        findViewById(R.id.recherchePlat).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this, RecherchePlat.class)));
 
         findViewById(R.id.conseils).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this, ConseilsActivity.class)));
 

@@ -12,10 +12,5 @@
         android:divider="#ffa0ca12"
         android:dividerHeight="5dp"
         >
-
-
     </ListView>
-
-
-
 </LinearLayout>

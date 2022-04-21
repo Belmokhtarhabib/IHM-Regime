@@ -37,7 +37,7 @@
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
         <activity
-            android:name=".RecherchePlat"
+            android:name=".recherchePlat.RecherchePlat"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
