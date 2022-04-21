@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MainActivity.this,Parametres.class)));
+        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MainActivity.this, ParametresActivity.class)));
 
         findViewById(R.id.recherchePlat).setOnClickListener(v1 -> startActivity(new Intent(MainActivity.this, RecherchePlat.class)));
 

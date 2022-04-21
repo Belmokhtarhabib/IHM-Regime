@@ -6,15 +6,15 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/recetteBoisson"
+        android:id="@+id/recipeMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ceci est un test"
+        android:text="test"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="358dp" />
 
     <ImageView
-        android:id="@+id/imageBoisson"
+        android:id="@+id/imageMeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
