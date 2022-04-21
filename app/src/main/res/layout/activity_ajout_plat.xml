@@ -7,10 +7,57 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".ajoutplat.AjoutPlat">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="#4169F1">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cog"
+                app:fabSize="normal"
+                app:backgroundTint="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                app:tint="#4169F1"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/home"
+                app:fabSize="normal"
+                app:backgroundTint="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                app:tint="#4169F1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
     <EditText
         android:id="@+id/ajout_nom_plat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:hint="Nom du plat à ajouter"
         android:layout_gravity="center" />
 
@@ -30,6 +77,12 @@ tools:context=".ajoutplat.AjoutPlat">
     android:layout_margin="12dp"
     android:layout_marginLeft="10dp"
     android:layout_gravity="center"
+    app:icon="@drawable/camera"
+    app:backgroundTint="#4169F1"
+    app:strokeColor="#000000"
+    app:strokeWidth="2dp"
+    app:iconSize="40dp"
+    android:textSize="20sp"
     android:text="Prendre une photo"/>
 
 
@@ -38,6 +91,11 @@ tools:context=".ajoutplat.AjoutPlat">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="20sp"
+    app:icon="@drawable/send"
+    app:backgroundTint="#8BC34A"
+    app:strokeColor="#000000"
+    app:strokeWidth="2dp"
+    app:iconSize="40dp"
     android:text="Envoyer"
     android:layout_gravity="center"/>
 

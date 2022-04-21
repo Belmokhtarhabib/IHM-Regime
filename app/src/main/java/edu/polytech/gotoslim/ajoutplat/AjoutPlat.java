@@ -2,6 +2,7 @@ package edu.polytech.gotoslim.ajoutplat;
 
 import static edu.polytech.gotoslim.NotificationChannelGTS.CHANNEL_ID;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
@@ -11,15 +12,16 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import edu.polytech.gotoslim.Header;
+import edu.polytech.gotoslim.MainActivity;
+import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
 
-public class AjoutPlat extends Header {
+public class AjoutPlat extends AppCompatActivity {
 
     private int notificationId = 0;
     private static final float TRANSPARENT = 0.3f;
@@ -30,8 +32,12 @@ public class AjoutPlat extends Header {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
-        ViewGroup.inflate(AjoutPlat.this, R.layout.activity_ajout_plat, vg);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_ajout_plat);
+
+        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(AjoutPlat.this, ParametresActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(AjoutPlat.this, MainActivity.class)));
 
         EditText editTextNomPlat = findViewById(R.id.ajout_nom_plat);
 
