@@ -7,6 +7,13 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".ajoutplat.AjoutPlat">
 
+    <EditText
+        android:id="@+id/ajout_nom_plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nom du plat à ajouter"
+        android:layout_gravity="center" />
+
 <ImageView
     android:id="@+id/imageView"
     android:layout_marginTop="10dp"
@@ -25,12 +32,6 @@ tools:context=".ajoutplat.AjoutPlat">
     android:layout_gravity="center"
     android:text="Prendre une photo"/>
 
-<EditText
-    android:id="@+id/ajout_nom_plat"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:hint="Nom du plat à ajouter"
-    android:layout_gravity="center" />
 
 <Button
     android:id="@+id/ajout_envoyer"

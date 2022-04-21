@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -21,6 +22,8 @@ import edu.polytech.gotoslim.R;
 public class AjoutPlat extends Header {
 
     private int notificationId = 0;
+    private static final float TRANSPARENT = 0.3f;
+    private static final float OPAQUE = 1;
     private Bitmap picture = null;
 
     @Override
@@ -30,17 +33,31 @@ public class AjoutPlat extends Header {
         ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
         ViewGroup.inflate(AjoutPlat.this, R.layout.activity_ajout_plat, vg);
 
+        EditText editTextNomPlat = findViewById(R.id.ajout_nom_plat);
+
+        findViewById(R.id.ajout_envoyer).setAlpha(TRANSPARENT);
+
         findViewById(R.id.ajout_envoyer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nomPlat = ((EditText) findViewById(R.id.ajout_nom_plat)).getText().toString();
-                sendNotificationOnChannel(nomPlat,CHANNEL_ID, NotificationCompat.PRIORITY_HIGH);
+                System.out.println(nomPlat);
+                if (picture != null && !TextUtils.isEmpty(nomPlat)){
+                    sendNotificationOnChannel(nomPlat,CHANNEL_ID, NotificationCompat.PRIORITY_HIGH);
+                }
             }
         });
 
         findViewById(R.id.button_image).setOnClickListener( click -> {
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);   // Create an implicit intent, for image capture
             startActivityForResult(intent, PermissionFactory.REQUEST_ID_IMAGE_CAPTURE);      // Start camera and wait for the results.
+        });
+
+        editTextNomPlat.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                findViewById(R.id.ajout_envoyer).setAlpha(picture != null && !TextUtils.isEmpty(((EditText) findViewById(R.id.ajout_nom_plat)).getText().toString()) ? OPAQUE : TRANSPARENT);
+            }
         });
     }
 
@@ -66,6 +83,9 @@ public class AjoutPlat extends Header {
             switch (resultCode) {
                 case RESULT_OK:
                     picture = (Bitmap) data.getExtras().get("data");
+                    if (picture != null && !TextUtils.isEmpty(((EditText) findViewById(R.id.ajout_nom_plat)).getText().toString())){
+                        findViewById(R.id.ajout_envoyer).setAlpha(OPAQUE);
+                    }
                     ((ImageView) findViewById(R.id.imageView)).setImageBitmap(picture);
                     break;
                 case RESULT_CANCELED:
