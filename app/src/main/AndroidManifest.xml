@@ -31,6 +31,9 @@
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
         <activity
+            android:name=".conseil.MealActivity"
+            android:exported="false" />
+        <activity
             android:name=".recherchePlat.RecherchePlat"
             android:exported="false" />
         <activity
