@@ -18,7 +18,7 @@ public class ConseilsActivity extends Header {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
+        ViewGroup vg = findViewById(R.id.lldata);
 
         ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
 
