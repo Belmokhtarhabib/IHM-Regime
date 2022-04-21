@@ -11,9 +11,11 @@ import edu.polytech.gotoslim.conseil.listCreation.Meal;
 
 public class MealList extends ArrayList<Meal> {
     public MealList(String type){
-        if(type.equals(DRINK)) addAll(new ListDrink());
-        else if(type.equals(MAIN_COURSE)) addAll(new ListMainCourse());
-        else if(type.equals(DESERT)) addAll(new ListDesert());
-        else if(type.equals(STARTER)) addAll(new ListStarter());
+        switch (type){
+            case DRINK: addAll(new ListDrink());
+            case MAIN_COURSE: addAll(new ListMainCourse());
+            case DESERT: addAll(new ListDesert());
+            case STARTER: addAll(new ListStarter());
+        }
     }
 }

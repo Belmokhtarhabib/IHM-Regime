@@ -22,13 +22,13 @@ public class ConseilsActivity extends Header {
 
         ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
 
-        findViewById(R.id.boisson).setOnClickListener(v1 -> LaunchActivity(DRINK));
-        findViewById(R.id.plat).setOnClickListener(v1 -> LaunchActivity(MAIN_COURSE));
-        findViewById(R.id.dessert).setOnClickListener(v1 -> LaunchActivity(DESERT));
-        findViewById(R.id.entrée).setOnClickListener(v1 -> LaunchActivity(STARTER));
+        findViewById(R.id.boisson).setOnClickListener(v1 -> launchActivity(DRINK));
+        findViewById(R.id.plat).setOnClickListener(v1 -> launchActivity(MAIN_COURSE));
+        findViewById(R.id.dessert).setOnClickListener(v1 -> launchActivity(DESERT));
+        findViewById(R.id.entrée).setOnClickListener(v1 -> launchActivity(STARTER));
     }
 
-    void LaunchActivity(String type){
+    void launchActivity(String type){
         Intent i = new Intent(ConseilsActivity.this, MealListActivity.class);
         i.putExtra("typeMeal", type);
         startActivity(i);
