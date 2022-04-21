@@ -1,4 +1,4 @@
-package edu.polytech.gotoslim.conseil.activities;
+package edu.polytech.gotoslim.conseil;
 
 import static edu.polytech.gotoslim.conseil.listCreation.MealConst.DRINK;
 
@@ -16,13 +16,16 @@ import edu.polytech.gotoslim.conseil.listCreation.MealAdapter;
 import edu.polytech.gotoslim.conseil.listCreation.lists.FactoryList;
 import edu.polytech.gotoslim.conseil.listCreation.lists.MealList;
 
-public class DrinkListActivity extends AppCompatActivity implements Ilistener {
+public class MealListActivity extends AppCompatActivity implements Ilistener {
+    private String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meal);
-        MealList meals = (new FactoryList()).createList(DRINK);
+
+        type = getIntent().getStringExtra("typeMeal");
+        MealList meals = (new FactoryList()).createList(type);
 
         MealAdapter adapter = new MealAdapter(getApplicationContext(), meals);
 
@@ -34,7 +37,7 @@ public class DrinkListActivity extends AppCompatActivity implements Ilistener {
     @Override
     public void onClick(Meal item){
         Intent intent = new Intent(getApplicationContext(), MealActivity.class);
-        intent.putExtra(DRINK, item);
+        intent.putExtra(type, item);
         startActivity(intent);
     }
 }

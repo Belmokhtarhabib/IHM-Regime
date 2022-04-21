@@ -25,10 +25,7 @@
             android:name=".statetpoid.StatEtPoids"
             android:exported="false" />
         <activity
-            android:name=".conseil.activities.DrinkListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".conseil.activities.PlatListActivity"
+            android:name=".conseil.MealListActivity"
             android:exported="false" />
         <activity
             android:name=".conseil.ConseilsActivity"
