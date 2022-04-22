@@ -50,6 +50,7 @@ public class AjoutPlat extends AppCompatActivity {
                 System.out.println(nomPlat);
                 if (picture != null && !TextUtils.isEmpty(nomPlat)){
                     sendNotificationOnChannel(nomPlat,CHANNEL_ID, NotificationCompat.PRIORITY_HIGH);
+                    startActivity(new Intent(AjoutPlat.this, MainActivity.class));
                 }
             }
         });
