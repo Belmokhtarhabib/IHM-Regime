@@ -3,6 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_stat_et_poids.xml" value="0.33" />
+=======
+<<<<<<< HEAD
+        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/plus_circle.xml" value="0.191" />
+        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_ajout_plat.xml" value="0.1" />
+        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_conseils.xml" value="0.15353260869565216" />
+        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_header.xml" value="0.264" />
+        <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_recherche_plat.xml" value="0.2" />
+>>>>>>> 342af8db45f830a0aae9d7542742290c06c4caea
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1615" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/acitivity_nosconseils.xml" value="0.2" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_boisson.xml" value="0.16041666666666668" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_conseils.xml" value="0.2" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_header.xml" value="0.17798913043478262" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_nosconseils.xml" value="0.22" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_plat.xml" value="0.16757246376811594" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/activity_stat_et_poids.xml" value="0.1" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/boisson_layout.xml" value="0.16041666666666668" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/conseilboisson_activity.xml" value="0.15" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/nosconseils_activity.xml" value="0.1859375" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/plat_layout.xml" value="0.16757246376811594" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/recetteboisson_activity.xml" value="0.16041666666666668" />
+        <entry key="..\:/outilprog/workspace/ihm/GoToSlim/app/src/main/res/layout/recetteplat_activity.xml" value="0.16757246376811594" />
+=======
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/account_circle.xml" value="0.1515" />
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/calendar_range.xml" value="0.1225" />
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/drawable/chart_line.xml" value="0.2275" />
@@ -19,6 +46,7 @@
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/boisson_layout.xml" value="0.3875" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/plat_layout.xml" value="0.3875" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/recetteboisson_activity.xml" value="0.3875" />
+>>>>>>> e90e0cd9c64315778df58112df0f29db3fde32c5
       </map>
     </option>
   </component>

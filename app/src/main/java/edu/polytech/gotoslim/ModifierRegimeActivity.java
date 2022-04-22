@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.CalendarContract;
-import android.text.format.DateUtils;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Date;
+
+import edu.polytech.gotoslim.ajoutplat.AjoutPlat;
 
 public class ModifierRegimeActivity extends AppCompatActivity {
 
@@ -24,7 +26,12 @@ public class ModifierRegimeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         setContentView(R.layout.modifierregime);
+
+        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ModifierRegimeActivity.this, ParametresActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(ModifierRegimeActivity.this, MainActivity.class)));
 
         name=findViewById(R.id.EvenementName);
         description=findViewById(R.id.EvenementDescription);

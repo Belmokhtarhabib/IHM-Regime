@@ -7,20 +7,26 @@ import static edu.polytech.gotoslim.conseil.listCreation.MealConst.STARTER;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ViewGroup;
+import android.view.Window;
 
-import edu.polytech.gotoslim.Header;
+import androidx.appcompat.app.AppCompatActivity;
+
+import edu.polytech.gotoslim.MainActivity;
+import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
 
-public class ConseilsActivity extends Header {
+public class ConseilsActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        ViewGroup vg = findViewById(R.id.lldata);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_conseils);
 
-        ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
+        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, ParametresActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, MainActivity.class)));
 
         findViewById(R.id.boisson).setOnClickListener(v1 -> launchActivity(DRINK));
         findViewById(R.id.plat).setOnClickListener(v1 -> launchActivity(MAIN_COURSE));
