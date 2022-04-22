@@ -4,17 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/stat_poids"
     tools:context=".statetpoid.StatEtPoids">
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/manage"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#2D4ADC"
-        android:text="@string/nouveau_poids"
-        android:visibility="visible"
-        app:iconTint="#2535C3"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="406dp" />
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphique">
+
+
+        <Button
+            android:id="@+id/button_setStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2D4ADC"
+            android:text="@string/nouveau_poids"
+            android:visibility="visible"
+            app:iconTint="#2535C3"
+            app:layout_constraintTop_toBottomOf="@+id/input_poids"
+            tools:layout_editor_absoluteX="127dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/input_poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrer votre nouveau Poids"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintTop_toBottomOf="@+id/input_taille"
+            tools:layout_editor_absoluteX="0dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/input_taille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="entrer votre nouvelle taille"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="number"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/manage"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/taille"
+            android:layout_width="408dp"
+            android:layout_height="25dp"
+            android:text="Taille" />
+
+        <TextView
+            android:id="@+id/poids"
+            android:layout_width="408dp"
+            android:layout_height="25dp"
+            android:text="Poids" />
+
+        <TextView
+            android:id="@+id/imc"
+            android:layout_width="408dp"
+            android:layout_height="25dp"
+            android:text="IMC" />
+
+        <TextView
+            android:id="@+id/poidsPerdu"
+            android:layout_width="408dp"
+            android:layout_height="25dp"
+            android:text="Poids Perdu" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/graphique"
+        android:layout_width="347dp"
+        android:layout_height="315dp"
+        android:src="@drawable/graphique"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="60dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
