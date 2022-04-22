@@ -1,42 +1,42 @@
 package edu.polytech.gotoslim.conseil;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static edu.polytech.gotoslim.conseil.listCreation.MealConst.DESERT;
+import static edu.polytech.gotoslim.conseil.listCreation.MealConst.DRINK;
+import static edu.polytech.gotoslim.conseil.listCreation.MealConst.MAIN_COURSE;
+import static edu.polytech.gotoslim.conseil.listCreation.MealConst.STARTER;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.view.ViewGroup;
-import android.widget.ListView;
+import android.view.Window;
 
-import edu.polytech.gotoslim.Header;
+import androidx.appcompat.app.AppCompatActivity;
+
 import edu.polytech.gotoslim.MainActivity;
-import edu.polytech.gotoslim.Parametres;
+import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
-import edu.polytech.gotoslim.RecherchePlat;
-import edu.polytech.gotoslim.conseil.boisson.Boisson;
-import edu.polytech.gotoslim.conseil.boisson.BoissonActivity;
-import edu.polytech.gotoslim.conseil.boisson.BoissonAdapter;
-import edu.polytech.gotoslim.conseil.boisson.BoissonListActivity;
-import edu.polytech.gotoslim.conseil.boisson.ListBoisson;
-import edu.polytech.gotoslim.conseil.plat.PlatActivity;
-import edu.polytech.gotoslim.conseil.plat.PlatListActivity;
 
-public class ConseilsActivity extends Header {
+public class ConseilsActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        ViewGroup vg = (ViewGroup) findViewById(R.id.lldata);
-        //setContentView(R.layout.activity_conseils);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+        setContentView(R.layout.activity_conseils);
 
+        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, ParametresActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, MainActivity.class)));
 
-        ViewGroup.inflate(ConseilsActivity.this, R.layout.activity_conseils, vg);
-        findViewById(R.id.boisson).setOnClickListener(v1 -> startActivity(new Intent(ConseilsActivity.this,BoissonListActivity.class)));
-
-        findViewById(R.id.plat).setOnClickListener(v1 -> startActivity(new Intent(ConseilsActivity.this, PlatListActivity.class)));
+        findViewById(R.id.boisson).setOnClickListener(v1 -> launchActivity(DRINK));
+        findViewById(R.id.plat).setOnClickListener(v1 -> launchActivity(MAIN_COURSE));
+        findViewById(R.id.dessert).setOnClickListener(v1 -> launchActivity(DESERT));
+        findViewById(R.id.entrée).setOnClickListener(v1 -> launchActivity(STARTER));
     }
 
-
-
+    void launchActivity(String type){
+        Intent i = new Intent(ConseilsActivity.this, MealListActivity.class);
+        i.putExtra("typeMeal", type);
+        startActivity(i);
+    }
 }

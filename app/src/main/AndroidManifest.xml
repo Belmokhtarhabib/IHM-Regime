@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.polytech.gotoslim" >
+    package="edu.polytech.gotoslim">
 
     <application
         android:allowBackup="true"
+        android:name=".NotificationChannelGTS"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GoToSlim" >
+        android:theme="@style/Theme.GoToSlim">
         <activity
-            android:name=".Parametres"
+            android:name=".ajoutplat.AjoutPlat"
+            android:exported="false" />
+        <activity
+            android:name=".ModifierRegimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParametresActivity"
             android:exported="false" />
         <activity
             android:name=".Suivi"
@@ -22,26 +29,20 @@
             android:name=".statetpoid.StatEtPoids"
             android:exported="false" />
         <activity
-            android:name=".conseil.boisson.BoissonListActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".conseil.boisson.BoissonActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".conseil.plat.PlatListActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".conseil.plat.PlatActivity"
-            android:exported="false"/>
+            android:name=".conseil.MealListActivity"
+            android:exported="false" />
         <activity
             android:name=".conseil.ConseilsActivity"
             android:exported="false" />
         <activity
-            android:name=".RecherchePlat"
+            android:name=".conseil.MealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recherchePlat.RecherchePlat"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

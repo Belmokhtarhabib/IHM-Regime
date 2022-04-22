@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    tools:context=".recherchePlat.RecherchePlat">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -52,32 +51,13 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <AutoCompleteTextView
-        android:id="@+id/search_meal"
+    <ListView
+        android:id="@+id/listViewMeal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/conseil_zone_text"
-        android:textSize="30sp"/>
-
-    <ListView
-        android:id="@+id/mealList"
-        android:layout_width="match_parent"
-        android:layout_height="0sp"
-        android:layout_weight="1"
         android:choiceMode="singleChoice"
         android:divider="#ffa0ca12"
-        android:dividerHeight="5dp" />
-
-    <Button
-            android:id="@+id/ajoutplat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ajouter_plat"
-            app:icon="@drawable/plus_circle"
-            app:backgroundTint="#4169F1"
-            app:strokeColor="#000000"
-            android:layout_gravity="center"
-            app:strokeWidth="2dp"
-            app:iconSize="50dp"/>
-
+        android:dividerHeight="5dp"
+        >
+    </ListView>
 </LinearLayout>
