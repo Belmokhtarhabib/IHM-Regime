@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="411dp"
+    android:layout_height="440dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        app:icon="@drawable/succes3"
+        app:backgroundTint="@color/notUnlocked"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="68dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        app:icon="@drawable/dessert"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/gold"
+        app:iconSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="326dp"
+        android:layout_marginEnd="230dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        app:icon="@drawable/verre"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:backgroundTint="@color/gold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="66dp"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        app:icon="@drawable/plat"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"
+        android:backgroundTint="@color/notUnlocked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="230dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/notUnlocked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="68dp"
+        app:icon="@drawable/camera"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/gold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="232dp"
+        app:icon="@drawable/send"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        app:iconSize="50dp" />
+</RelativeLayout>
