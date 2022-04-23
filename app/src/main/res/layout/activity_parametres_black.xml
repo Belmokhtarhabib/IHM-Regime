@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    tools:context=".ParametresActivity"
     android:layout_height="match_parent"
-    tools:context=".succes.Succes">
+    android:layout_width="match_parent"
+    android:background="#778899">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="80dp">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout1"
+        <RelativeLayout android:id="@+id/relativeLayout1"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
-            android:background="#4169F1">
+            android:background="#696969">
 
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -26,21 +26,21 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
-                app:backgroundTint="#FFFFFF"
+                android:backgroundTint="#4169F1"
                 app:fabSize="normal"
                 app:srcCompat="@drawable/cog"
-                app:tint="#4169F1" />
+                app:tint="@color/black" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/home"
+                app:fabSize="normal"
+                app:backgroundTint="#4169F1"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
-                app:backgroundTint="#FFFFFF"
-                app:fabSize="normal"
-                app:srcCompat="@drawable/home"
-                app:tint="#4169F1" />
+                app:tint="@color/black"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,49 +54,47 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/AllSuccess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        android:text="tout les succes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/UnlockedSucces"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:text="succes débloquer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textParametre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="24dp"
-        android:text="Succes"
-        android:textSize="80px"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="92dp"
+        android:layout_weight="1"
+        android:text="Parametres"
+        android:textColor="@color/white"
+        android:textSize="100px"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="376dp"
-        android:layout_height="494dp"
-        android:layout_marginTop="69dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/buttonModifierMonRegime"
+        android:layout_width="263dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="80dp"
+        android:text="Modifier mon régime"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/textParametre"
+        tools:ignore="MissingConstraints" />
 
+    <Switch
+        android:id="@+id/ModeSombre_black"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:switchMinWidth="200px"
+        android:switchPadding="20px"
+        android:text="Mode sombre"
+        android:textColor="@color/white"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModifierMonRegime"
+        android:checked="true"/>
 
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
