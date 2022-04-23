@@ -1,145 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="80dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-        <RelativeLayout android:id="@+id/relativeLayout1"
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="80dp">
+
+            <RelativeLayout android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#4169F1">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cog"
+                    app:fabSize="normal"
+                    app:backgroundTint="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="16dp"
+                    app:tint="#4169F1"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/home"
+                    app:fabSize="normal"
+                    app:backgroundTint="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    app:tint="#4169F1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textConseil"
+            android:layout_width="225dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="15px"
+            android:text="Nos conseils"
+            android:gravity="center"
+            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:background="#4169F1">
+            android:textSize="100px" />
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/settings"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cog"
-                app:fabSize="normal"
-                app:backgroundTint="#FFFFFF"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="16dp"
-                app:tint="#4169F1"/>
+        <Button
+            android:id="@+id/boisson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boissons"
+            app:icon="@drawable/verre"
+            android:background="#900C3F"
+            app:backgroundTint="#900C3F"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            app:iconSize="50dp"
+            android:textSize="20sp"
+            android:width="300dp"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:height="75dp"
+            android:layout_gravity="center"
+            />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/home"
-                app:fabSize="normal"
-                app:backgroundTint="#FFFFFF"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                app:tint="#4169F1"/>
+        <Button
+            android:id="@+id/entrée"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrées"
+            app:icon="@drawable/plat"
+            app:backgroundTint="#93C47D"
+            android:background="#93C47D"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            app:iconSize="50dp"
+            android:textSize="20sp"
+            android:width="300dp"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:height="75dp"
+            android:layout_gravity="center"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="@string/app_name"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/plat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plats"
+            app:icon="@drawable/plat"
+            app:backgroundTint="#6FA8DC"
+            android:background="#6FA8DC"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            app:iconSize="50dp"
+            android:textSize="20sp"
+            android:width="300dp"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:height="75dp"
+            android:layout_gravity="center"
+            />
 
-        </RelativeLayout>
+        <Button
+            android:id="@+id/dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:width="300dp"
+            android:height="75dp"
+            android:text="Desserts"
+            android:textSize="20sp"
+            app:backgroundTint="#FF9900"
+            android:background="#FF9900"
+            app:icon="@drawable/dessert"
+            app:iconSize="50dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:layout_gravity="center"/>
+
+
+
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textConseil"
-        android:layout_width="225dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="15px"
-        android:text="Nos conseils"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:textSize="100px" />
-
-
-    <Button
-        android:id="@+id/boisson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boissons"
-        app:icon="@drawable/verre"
-        android:background="#900C3F"
-        app:backgroundTint="#900C3F"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        android:layout_marginTop="50px"
-        android:layout_marginBottom="50px"
-        android:height="75dp"
-        android:layout_gravity="center"
-        />
-
-    <Button
-        android:id="@+id/entrée"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Entrées"
-        app:icon="@drawable/plat"
-        app:backgroundTint="#93C47D"
-        android:background="#93C47D"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        android:layout_marginTop="50px"
-        android:layout_marginBottom="50px"
-        android:height="75dp"
-        android:layout_gravity="center"
-        />
-
-    <Button
-        android:id="@+id/plat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Plats"
-        app:icon="@drawable/plat"
-        app:backgroundTint="#6FA8DC"
-        android:background="#6FA8DC"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        app:iconSize="50dp"
-        android:textSize="20sp"
-        android:width="300dp"
-        android:layout_marginTop="50px"
-        android:layout_marginBottom="50px"
-        android:height="75dp"
-        android:layout_gravity="center"
-        />
-
-    <Button
-        android:id="@+id/dessert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
-        android:width="300dp"
-        android:height="75dp"
-        android:text="Desserts"
-        android:textSize="20sp"
-        app:backgroundTint="#FF9900"
-        android:background="#FF9900"
-        app:icon="@drawable/dessert"
-        app:iconSize="50dp"
-        app:strokeColor="#000000"
-        app:strokeWidth="2dp"
-        android:layout_gravity="center"/>
-
-
-
-</LinearLayout>
-
+</ScrollView>
 
