@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
-import edu.polytech.gotoslim.ajoutplat.AjoutPlat;
 
 public class StatEtPoids extends AppCompatActivity {
 
@@ -38,8 +37,5 @@ public class StatEtPoids extends AppCompatActivity {
         vue.getBouttonMAJ().setOnClickListener(click -> controller.miseAJourInView());
 
         System.out.println("LANCEMENT REUSSI");
-
-
-
     }
 }
