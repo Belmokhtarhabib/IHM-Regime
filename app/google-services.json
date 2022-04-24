@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "635833310423",
+    "project_id": "ihm-gotoslim",
+    "storage_bucket": "ihm-gotoslim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635833310423:android:9d5268f7c5708bfbab6492",
+        "android_client_info": {
+          "package_name": "edu.polytech.gotoslim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635833310423-ma3t7hoe417d9onmmt3jk9ak2n39r1sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.polytech.gotoslim",
+            "certificate_hash": "eac693a74033c2d38ce9526519b94492aaa53caf"
+          }
+        },
+        {
+          "client_id": "635833310423-3b1nkhrgi1p3jr07khafrnsldakcipqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZDmJv8oNMTcEnSLCYmvmV41TODhsH_pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635833310423-3b1nkhrgi1p3jr07khafrnsldakcipqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
