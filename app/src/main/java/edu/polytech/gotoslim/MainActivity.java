@@ -7,9 +7,11 @@ import android.content.res.Configuration;
 import android.view.Window;
 import android.os.Bundle;
 
+import edu.polytech.gotoslim.RequestApi.RequestThread;
 import edu.polytech.gotoslim.conseil.ConseilsActivity;
 import android.widget.ProgressBar;
 
+import edu.polytech.gotoslim.recherchePlat.AfficherPlatActivity;
 import edu.polytech.gotoslim.recherchePlat.RecherchePlat;
 import edu.polytech.gotoslim.statetpoid.StatEtPoids;
 import edu.polytech.gotoslim.succes.Succes;
@@ -38,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
         ProgressBar pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setProgress(90);
+
+        AfficherPlatActivity plato = new AfficherPlatActivity();
+        RequestThread thread = new RequestThread(plato);
+
+        thread.execute("pasta");
     }
 }

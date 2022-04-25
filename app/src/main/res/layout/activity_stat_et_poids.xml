@@ -25,13 +25,17 @@
                 android:id="@+id/button_setStat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#2D4ADC"
                 android:text="@string/nouveau_poids"
                 android:visibility="visible"
+                app:backgroundTint="#4169F1"
+                app:icon="@drawable/plus_circle"
+                app:iconSize="50dp"
                 app:iconTint="#2535C3"
                 app:layout_constraintTop_toBottomOf="@+id/input_poids"
-                tools:layout_editor_absoluteX="127dp"
-                tools:ignore="MissingConstraints" />
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="98dp" />
 
             <EditText
                 android:id="@+id/input_poids"
