@@ -2,24 +2,20 @@ package edu.polytech.gotoslim.conseil;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Window;
-import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
-import edu.polytech.gotoslim.Suivi;
 import edu.polytech.gotoslim.conseil.listCreation.Ilistener;
 import edu.polytech.gotoslim.conseil.listCreation.Meal;
-import edu.polytech.gotoslim.conseil.listCreation.MealAdapter;
-import edu.polytech.gotoslim.conseil.listCreation.lists.FactoryList;
-import edu.polytech.gotoslim.conseil.listCreation.lists.MealList;
 
 public class MealListActivity extends AppCompatActivity implements Ilistener {
     private String type;
+    private boolean isTab = false;
+    MealRecipe mealRecipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,25 +24,45 @@ public class MealListActivity extends AppCompatActivity implements Ilistener {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_meal);
 
+        this.configureAndShowListMealFragment();
+
+        //only on tablet
+        this.configureAndShowMealRecipeFragment();
+
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MealListActivity.this, ParametresActivity.class)));
         findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(MealListActivity.this, MainActivity.class)));
-
-        type = getIntent().getStringExtra("typeMeal");
-        MealList meals = (new FactoryList()).createList(type);
-
-        MealAdapter adapter = new MealAdapter(getApplicationContext(), meals);
-
-        ListView list = findViewById(R.id.listViewMeal);
-
-        list.setAdapter(adapter);
-
-        adapter.addListener(this);
     }
 
     @Override
     public void onClick(Meal item){
-        Intent intent = new Intent(getApplicationContext(), MealActivity.class);
-        intent.putExtra("item", item);
-        startActivity(intent);
+        if(!isTab){
+            Intent intent = new Intent(getApplicationContext(), MealActivity.class);
+            intent.putExtra("item", item);
+            startActivity(intent);
+        }else{
+            mealRecipe = new MealRecipe(item);
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout_recipe_meal, mealRecipe).commit();
+        }
+    }
+
+    private void configureAndShowListMealFragment(){
+        ListMeal listMeal = (ListMeal) getSupportFragmentManager().findFragmentById(R.id.frame_layout_list_meal);
+
+        if (listMeal == null) {
+            listMeal = new ListMeal();
+            getSupportFragmentManager().beginTransaction().add(R.id.frame_layout_list_meal, listMeal).commit();
+        }
+    }
+
+    private void configureAndShowMealRecipeFragment(){
+        mealRecipe = (MealRecipe) getSupportFragmentManager().findFragmentById(R.id.frame_layout_recipe_meal);
+        isTab = findViewById(R.id.frame_layout_recipe_meal) != null;
+        //A - We only add DetailFragment in Tablet mode (If found frame_layout_detail)
+        if (mealRecipe == null && isTab) {
+            mealRecipe = new MealRecipe();
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.frame_layout_recipe_meal, mealRecipe)
+                    .commit();
+        }
     }
 }
