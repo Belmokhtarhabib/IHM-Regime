@@ -15,24 +15,26 @@
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/layout/activity_parametres.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/Antoine/Programmation/3A_Polytech/GoToSlim/app/src/main/res/menu/bottom_nav_menu.xml" value="0.153125" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout-w600dp/activity_conseils.xml" value="0.2708333333333333" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout-w600dp/activity_meal.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_afficher_plat.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_ajout_plat.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_meal.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_recherche_plat.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/activity_stat_et_poids.xml" value="0.29438405797101447" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/afficher_plat_activity.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/fragment_meal_recipe.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/baber/IHM-Regime/app/src/main/res/layout/main_fragment.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/activity_boisson.xml" value="0.3875" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/activity_conseils.xml" value="0.20208333333333334" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/activity_plat.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/activity_succes.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/boisson_layout.xml" value="0.3875" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/fragment_list_meal.xml" value="0.1" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/fragment_meal_recipe.xml" value="0.1" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/fragment_succes_buttons.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/fragment_unlockedsuccess.xml" value="0.21354166666666666" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/meal_layout.xml" value="0.1" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/plat_layout.xml" value="0.3875" />
-        <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/recette_activity.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/bille/OneDrive/Bureau/Projet_SI3/AllProjects/GoToSlim/app/src/main/res/layout/recetteboisson_activity.xml" value="0.3875" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

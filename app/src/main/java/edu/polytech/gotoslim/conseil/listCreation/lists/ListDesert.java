@@ -8,17 +8,17 @@ import edu.polytech.gotoslim.conseil.listCreation.Meal;
 public class ListDesert extends ArrayList<Meal> {
 
     public ListDesert(){
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
     }
 }

@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         ProgressBar pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setProgress(90);
 
-        AfficherPlatActivity plato = new AfficherPlatActivity();
-        RequestThread thread = new RequestThread(plato);
+        //AfficherPlatActivity plato = new AfficherPlatActivity();
+        //RequestThread thread = new RequestThread(plato);
 
-        thread.execute("pasta");
+        //thread.execute("pasta");
     }
 }

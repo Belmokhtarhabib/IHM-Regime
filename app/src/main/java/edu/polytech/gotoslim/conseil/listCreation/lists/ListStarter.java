@@ -8,22 +8,22 @@ import edu.polytech.gotoslim.conseil.listCreation.Meal;
 public class ListStarter extends ArrayList<Meal> {
 
     public ListStarter(){
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "betterave"));
     }
 }
