@@ -7,10 +7,18 @@ import org.json.JSONObject;
 
 public class AfficherPlatActivity extends AppCompatActivity {
 
-    public JSONObject itemRecup;
+    private JSONObject itemRecup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    public JSONObject getItemRecup() {
+        return itemRecup;
+    }
+
+    public void setItemRecup(JSONObject itemRecup) {
+        this.itemRecup = itemRecup;
     }
 }

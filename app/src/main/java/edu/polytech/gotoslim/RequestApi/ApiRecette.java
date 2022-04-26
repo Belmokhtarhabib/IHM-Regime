@@ -18,8 +18,8 @@ public class ApiRecette{
 
     private final String TAG = "ApiRecette";
     private static final String apiReqGet
-            = "https://api.spoonacular.com/recipes/complexSearch?apiKey=6b4aa1c049db4b93b394a2277f9ca4f0&query=";
-    private static final String suiteReq = "&maxVitaminC=100&maxProtein=100&maxCalories=800&maxFat=25&maxSugar=100&number=3";
+            = "https://api.spoonacular.com/recipes/complexSearch?apiKey=6933414d51f54eb0bfbe27e4eca082d7&query=";
+    private static final String suiteReq = "&maxVitaminC=100&maxProtein=100&maxCalories=800&maxFat=25&maxSugar=100&number=1";
 
     private static final String KEY = "6b4aa1c049db4b93b394a2277f9ca4f0";
 

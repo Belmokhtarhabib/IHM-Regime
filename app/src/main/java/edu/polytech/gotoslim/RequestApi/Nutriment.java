@@ -11,4 +11,16 @@ public class Nutriment {
         this.amount = quantité;
         this.unite = uniter;
     }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUnite() {
+        return unite;
+    }
 }

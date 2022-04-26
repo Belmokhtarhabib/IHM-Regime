@@ -10,6 +10,7 @@
     <string name="conseil_zone_text">Entrer un plat ...</string>
     <string name="nouveau_poids">Nouveau Poids</string>
     <string name="ajouter_plat">Ajouter\nun plat</string>
+    <string name="confirm">Confirmer la saisie</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

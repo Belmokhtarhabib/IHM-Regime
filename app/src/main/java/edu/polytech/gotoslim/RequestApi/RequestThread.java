@@ -27,7 +27,7 @@ public class RequestThread extends AsyncTask<String, Void, JSONObject> {
 
     @Override
     protected void onPostExecute(JSONObject jsonObject){
-        activity.itemRecup = jsonObject;
+        activity.setItemRecup(jsonObject);
         System.out.println(jsonObject.toString());
     }
 }
