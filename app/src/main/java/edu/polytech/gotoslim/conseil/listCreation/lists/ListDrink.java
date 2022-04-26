@@ -9,17 +9,21 @@ import edu.polytech.gotoslim.conseil.listCreation.Meal;
 public class ListDrink extends ArrayList<Meal>{
 
     public ListDrink(){
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
-        add(new Meal("Jus de bétrave", R.drawable.jusbetrave));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
+        add(new Meal("Jus de bétrave", R.drawable.jusbetrave, "recette"));
     }
 }

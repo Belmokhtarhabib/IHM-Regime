@@ -9,15 +9,19 @@ public class ListMainCourse extends ArrayList<Meal>{
 
 
     public ListMainCourse(){
-        add(new Meal("potage tomate", R.drawable.potagetomate));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.potagetomate));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
-        add(new Meal("potage tomate", R.drawable.jusbetrave));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
+        add(new Meal("potage tomate", R.drawable.potagetomate, "recette"));
+        add(new Meal("potage tomate", R.drawable.jusbetrave, "recette"));
     }
 }

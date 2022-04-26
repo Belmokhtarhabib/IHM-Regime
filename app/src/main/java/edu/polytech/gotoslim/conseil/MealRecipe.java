@@ -44,7 +44,7 @@ public class MealRecipe extends Fragment implements Ilistener {
 
         if(meal == null) meal = requireActivity().getIntent().getParcelableExtra("item");
         if(meal!=null) {
-            ((TextView) result.findViewById(R.id.recipeMeal)).setText(meal.getName());
+            ((TextView) result.findViewById(R.id.recipeMeal)).setText(meal.getRecipe());
             ((ImageView) result.findViewById(R.id.imageMeal)).setImageResource(meal.getPicture());
         }
         return result;
