@@ -29,7 +29,7 @@ public class Controller_StatEtPoids{
         System.out.println("taille value : "+taille);
         System.out.println("poids value : "+poids);
         model.miseAJour_Stat(taille,poids);
-        view.majText(this.model);
+        view.MAJ(this.model);
     }
 
 
