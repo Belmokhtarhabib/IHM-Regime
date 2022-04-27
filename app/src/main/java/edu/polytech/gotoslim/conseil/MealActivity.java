@@ -26,7 +26,10 @@ public class MealActivity extends AppCompatActivity implements Ilistener {
         setContentView(R.layout.activity_recipe);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MealActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(MealActivity.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(MealActivity.this, MainActivity.class));
+            finish();
+        });
 
         this.configureAndShowRecipeFragment();
     }

@@ -30,7 +30,10 @@ public class MealListActivity extends AppCompatActivity implements Ilistener {
         this.configureAndShowMealRecipeFragment();
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MealListActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(MealListActivity.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(MealListActivity.this, MainActivity.class));
+            finish();
+        });
     }
 
     @Override

@@ -24,7 +24,10 @@ public class StatEtPoids extends AppCompatActivity {
         setContentView(R.layout.activity_stat_et_poids);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(StatEtPoids.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(StatEtPoids.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(StatEtPoids.this, MainActivity.class));
+            finish();
+        });
 
         Controller_StatEtPoids controller = new Controller_StatEtPoids();
 
