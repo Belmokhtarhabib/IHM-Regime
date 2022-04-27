@@ -26,7 +26,10 @@ public class ConseilsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_conseils);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(ConseilsActivity.this, MainActivity.class));
+            finish();
+        });
 
         findViewById(R.id.boisson).setOnClickListener(v1 -> launchActivity(DRINK));
         findViewById(R.id.plat).setOnClickListener(v1 -> launchActivity(MAIN_COURSE));

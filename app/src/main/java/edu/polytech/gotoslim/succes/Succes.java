@@ -31,7 +31,10 @@ public class Succes extends AppCompatActivity {
         buttonAll=findViewById(R.id.AllSuccess);
         buttonUnlocked=findViewById(R.id.UnlockedSucces);
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(Succes.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(Succes.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(Succes.this, MainActivity.class));
+            finish();
+        });
 
         buttonAll.setOnClickListener(new View.OnClickListener() {
             @Override

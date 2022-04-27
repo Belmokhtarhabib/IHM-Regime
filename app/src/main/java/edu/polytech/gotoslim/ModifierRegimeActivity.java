@@ -31,7 +31,10 @@ public class ModifierRegimeActivity extends AppCompatActivity {
         setContentView(R.layout.modifierregime);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ModifierRegimeActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(ModifierRegimeActivity.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(ModifierRegimeActivity.this, MainActivity.class));
+            finish();
+        });
 
         name=findViewById(R.id.EvenementName);
         description=findViewById(R.id.EvenementDescription);

@@ -19,7 +19,10 @@ public class ParametresActivityBlack extends AppCompatActivity {
         setContentView(R.layout.activity_parametres_black);
 
         findViewById(R.id.settings).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(ParametresActivityBlack.this, MainActivity.class));
+            finish();
+        });
 
         ((Button) findViewById(R.id.buttonModifierMonRegime)).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ModifierRegimeActivity.class)));
         ((Switch) findViewById(R.id.ModeSombre_black)).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ParametresActivity.class)));

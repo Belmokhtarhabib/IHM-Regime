@@ -20,6 +20,9 @@ public class Suivi extends AppCompatActivity {
         setContentView(R.layout.activity_suivi);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(Suivi.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(Suivi.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(Suivi.this, MainActivity.class));
+            finish();
+        });
     }
 }

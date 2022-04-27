@@ -40,9 +40,15 @@ public class RecherchePlat extends AppCompatActivity {
         setContentView(R.layout.activity_recherche_plat);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(RecherchePlat.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> startActivity(new Intent(RecherchePlat.this, MainActivity.class)));
+        findViewById(R.id.home).setOnClickListener(v1-> {
+            startActivity(new Intent(RecherchePlat.this, MainActivity.class));
+            finish();
+        });
 
-        findViewById(R.id.ajoutplat).setOnClickListener(v1 -> startActivity(new Intent(RecherchePlat.this, AjoutPlat.class)));
+        findViewById(R.id.ajoutplat).setOnClickListener(v1 -> {
+            startActivity(new Intent(RecherchePlat.this, AjoutPlat.class));
+            finish();
+        });
 
         findViewById(R.id.confirmation).setOnClickListener(v1->
         {
