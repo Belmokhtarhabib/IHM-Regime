@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -30,11 +31,8 @@ public class Succes extends AppCompatActivity {
 
         buttonAll=findViewById(R.id.AllSuccess);
         buttonUnlocked=findViewById(R.id.UnlockedSucces);
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(Succes.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(Succes.this, MainActivity.class));
-            finish();
-        });
+
+        Header.setHeader(getSupportFragmentManager());
 
         buttonAll.setOnClickListener(new View.OnClickListener() {
             @Override

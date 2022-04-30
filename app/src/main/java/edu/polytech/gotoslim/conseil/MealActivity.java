@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -25,14 +26,11 @@ public class MealActivity extends AppCompatActivity implements Ilistener {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_recipe);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MealActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(MealActivity.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         this.configureAndShowRecipeFragment();
     }
+
 
     private void configureAndShowRecipeFragment(){
         MealRecipe mealRecipe = (MealRecipe) getSupportFragmentManager().findFragmentById(R.id.frame_layout_recipe_meal);

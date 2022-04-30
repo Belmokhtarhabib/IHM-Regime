@@ -11,6 +11,7 @@ import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -25,11 +26,7 @@ public class ConseilsActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_conseils);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(ConseilsActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(ConseilsActivity.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         findViewById(R.id.boisson).setOnClickListener(v1 -> launchActivity(DRINK));
         findViewById(R.id.plat).setOnClickListener(v1 -> launchActivity(MAIN_COURSE));

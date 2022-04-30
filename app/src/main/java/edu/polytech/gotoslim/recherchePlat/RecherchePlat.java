@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.RequestApi.ApiRecette;
@@ -39,11 +40,7 @@ public class RecherchePlat extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_recherche_plat);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(RecherchePlat.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(RecherchePlat.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         findViewById(R.id.ajoutplat).setOnClickListener(v1 -> {
             startActivity(new Intent(RecherchePlat.this, AjoutPlat.class));

@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import java.io.File;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -41,11 +42,7 @@ public class AjoutPlat extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ajout_plat);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(AjoutPlat.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(AjoutPlat.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         File[] externalDirectory = getExternalFilesDirs(null);
         if (externalDirectory.length>0) {  //only External primary storage exists

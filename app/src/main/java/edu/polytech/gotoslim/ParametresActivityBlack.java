@@ -18,11 +18,7 @@ public class ParametresActivityBlack extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_parametres_black);
 
-        findViewById(R.id.settings).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(ParametresActivityBlack.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         ((Button) findViewById(R.id.buttonModifierMonRegime)).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ModifierRegimeActivity.class)));
         ((Switch) findViewById(R.id.ModeSombre_black)).setOnClickListener(v1 -> startActivity(new Intent(ParametresActivityBlack.this, ParametresActivity.class)));

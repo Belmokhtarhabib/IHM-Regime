@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -24,16 +27,13 @@ public class MealListActivity extends AppCompatActivity implements Ilistener {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_meal);
 
+        Header.setHeader(getSupportFragmentManager());
+
         this.configureAndShowListMealFragment();
 
         //only on tablet
         this.configureAndShowMealRecipeFragment();
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MealListActivity.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(MealListActivity.this, MainActivity.class));
-            finish();
-        });
     }
 
     @Override

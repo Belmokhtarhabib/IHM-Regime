@@ -19,10 +19,6 @@ public class Suivi extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_suivi);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(Suivi.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(Suivi.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
     }
 }

@@ -8,6 +8,8 @@ import android.view.Window;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.appcompat.app.AppCompatActivity;
+
+import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
@@ -23,11 +25,7 @@ public class StatEtPoids extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_stat_et_poids);
 
-        findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(StatEtPoids.this, ParametresActivity.class)));
-        findViewById(R.id.home).setOnClickListener(v1-> {
-            startActivity(new Intent(StatEtPoids.this, MainActivity.class));
-            finish();
-        });
+        Header.setHeader(getSupportFragmentManager());
 
         Controller_StatEtPoids controller = new Controller_StatEtPoids();
 
