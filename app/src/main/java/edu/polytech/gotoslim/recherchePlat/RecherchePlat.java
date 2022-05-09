@@ -55,8 +55,6 @@ public class RecherchePlat extends AppCompatActivity {
                 this.json = ApiRecette.getJSONRecette(inputString);
                 System.out.println(json);
                 setContentView(R.layout.activity_afficher_plat);
-                findViewById(R.id.settings).setOnClickListener(vv-> startActivity(new Intent(RecherchePlat.this, ParametresActivity.class)));
-                findViewById(R.id.home).setOnClickListener(vv-> startActivity(new Intent(RecherchePlat.this, MainActivity.class)));
                 JSONArray jsonArray = new JSONArray(json.getString("results"));
                 JSONObject jsonObject = new JSONObject(String.valueOf(jsonArray.get(0)));
                 System.out.println(jsonObject);
@@ -70,6 +68,9 @@ public class RecherchePlat extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+            Header.setHeader(getSupportFragmentManager());
+
             String textCalorie = this.plat.listNut.get(0).getName()
                     +" : "+this.plat.listNut.get(0).getAmount()
                     +" "+this.plat.listNut.get(0).getUnite();

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".recherchePlat.AfficherPlatActivity">
+    tools:context=".recherchePlat.AfficherPlatActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
 
     <FrameLayout
         android:layout_width="fill_parent"
@@ -12,50 +15,12 @@
         android:id="@+id/header"
         tools:ignore="MissingConstraints" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:layout_editor_absoluteX="0dp">
-
-        <TextView
-            android:id="@+id/Calorie"
-            android:layout_width="408dp"
-            android:layout_height="51dp"
-            android:text="Calorie" />
-
-        <TextView
-            android:id="@+id/protein"
-            android:layout_width="408dp"
-            android:layout_height="44dp"
-            android:text="Protein" />
-
-        <TextView
-            android:id="@+id/gras"
-            android:layout_width="408dp"
-            android:layout_height="42dp"
-            android:text="Fat" />
-
-        <TextView
-            android:id="@+id/VitamineC"
-            android:layout_width="408dp"
-            android:layout_height="37dp"
-            android:text="Vitamine C" />
-
-        <TextView
-            android:id="@+id/Sucre"
-            android:layout_width="408dp"
-            android:layout_height="47dp"
-            android:text="SUCRE" />
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/textview"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
@@ -70,4 +35,50 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/bouffe" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/Calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/calorie"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/protein" />
+
+        <TextView
+            android:id="@+id/gras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/fat" />
+
+        <TextView
+            android:id="@+id/VitamineC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/vitamine_c" />
+
+        <TextView
+            android:id="@+id/Sucre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/sucre" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

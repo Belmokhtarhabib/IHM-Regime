@@ -114,4 +114,10 @@
     <string name="poids_perdu">Poids Perdu</string>
     <string name="tout_les_succ_s">tout les succès</string>
     <string name="succ_s_d_bloqu">succès débloqué</string>
+    <string name="calorie">Calorie</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fat</string>
+    <string name="vitamine_c">Vitamine C</string>
+    <string name="sucre">Sucre</string>
+    <string name="textview">TextView</string>
 </resources>
