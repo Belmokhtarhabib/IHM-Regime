@@ -49,7 +49,6 @@ public class MealRecipe extends Fragment implements Ilistener {
 
         if(meal == null) meal = requireActivity().getIntent().getParcelableExtra("item");
         if(meal!=null) {
-            ((ImageView) result.findViewById(R.id.imageMeal)).setImageResource(meal.getPicture());
             foundBaseRecette(meal.getRecipe());
         }
         return result;
@@ -76,7 +75,6 @@ public class MealRecipe extends Fragment implements Ilistener {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String elemUrl = snapshot.getValue(String.class);
-                System.out.println("lelelelelelelelellelelelelelelelellele   "+elemUrl);
                 WebView link = ((WebView) result.findViewById(R.id.WebView));
                 link.setWebViewClient(new WebViewClient());
                 link.loadUrl(elemUrl);

@@ -100,6 +100,18 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="parametres">Parametres</string>
+    <string name="modifier_mon_regime">Modifier mon régime</string>
+    <string name="mode_sombre">Mode sombre</string>
+    <string name="setting">setting</string>
+    <string name="graph">graph</string>
+    <string name="entrer_votre_nouveau_poids">entrer votre nouveau Poids</string>
+    <string name="entrer_votre_nouvelle_taille">entrer votre nouvelle taille</string>
+    <string name="taille">Taille</string>
+    <string name="poids">Poids</string>
+    <string name="imc">IMC</string>
+    <string name="poids_perdu">Poids Perdu</string>
+    <string name="tout_les_succ_s">tout les succès</string>
+    <string name="succ_s_d_bloqu">succès débloqué</string>
 </resources>

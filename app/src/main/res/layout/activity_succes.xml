@@ -4,12 +4,10 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".succes.Succes"
         android:orientation="vertical"
         android:gravity="center_horizontal">
@@ -24,8 +22,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Succes"
-            android:textSize="80px"
+            android:text="@string/succes"
+            android:textSize="80sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
@@ -39,18 +37,18 @@
                 android:id="@+id/AllSuccess"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tout les succès"
+                android:text="@string/tout_les_succ_s"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
             <Button
                 android:id="@+id/UnlockedSucces"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="succès débloqué"
+                android:text="@string/succ_s_d_bloqu"
                 android:layout_marginStart="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
         </LinearLayout>
 
