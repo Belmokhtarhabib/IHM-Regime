@@ -2,14 +2,14 @@
     <string name="app_name">Go To Slim</string>
     <string name="progression">Votre progression</string>
     <string name="menu_style">------ Menu ------</string>
-    <string name="conseil_titre">Nos conseils</string>
+    <string name="conseil_titre">Nos recettes</string>
     <string name="suivi">Mon suivi</string>
     <string name="stat_poids">Stats et poids</string>
     <string name="succes">Succès</string>
     <string name="cherche_plat">Rechercher un plat</string>
     <string name="conseil_zone_text">Entrer un plat ...</string>
     <string name="nouveau_poids">Nouveau Poids</string>
-    <string name="ajouter_plat">Ajouter\nun plat</string>
+    <string name="ajouter_plat">Suggérer\nun plat</string>
     <string name="confirm">Confirmer la saisie</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
