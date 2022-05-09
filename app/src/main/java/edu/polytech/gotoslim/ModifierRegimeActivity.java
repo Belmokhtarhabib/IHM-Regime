@@ -35,20 +35,19 @@ public class ModifierRegimeActivity extends AppCompatActivity {
         name=findViewById(R.id.EvenementName);
         description=findViewById(R.id.EvenementDescription);
         addEvent=findViewById(R.id.addEvent);
-        date=findViewById(R.id.EvenementDate);
+        //date=findViewById(R.id.EvenementDate);
 
 
         addEvent.setOnClickListener(view -> {
-            Date currentTime = Calendar.getInstance().getTime();
-            System.out.println("la date "+currentTime);
-            if(!name.getText().toString().isEmpty() && !description.getText().toString().isEmpty() && !date.getText().toString().isEmpty() ){
-                System.out.println("la date a string"+date.getText().toString());
+
+            if(!name.getText().toString().isEmpty() && !description.getText().toString().isEmpty()){
+
                 Intent intent=new Intent(Intent.ACTION_INSERT);
                 intent.setData(CalendarContract.Events.CONTENT_URI);
                 intent.putExtra(CalendarContract.Events.TITLE,name.getText().toString());
                 intent.putExtra(CalendarContract.Events.DESCRIPTION,description.getText().toString());
                 System.out.println("oulalala "+CalendarContract.EXTRA_EVENT_BEGIN_TIME);
-                intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,"1713625537000");
+
                 intent.putExtra(CalendarContract.Events.ALL_DAY,"true");
                 intent.putExtra(Intent.EXTRA_EMAIL,"test@gmail.com");
 
