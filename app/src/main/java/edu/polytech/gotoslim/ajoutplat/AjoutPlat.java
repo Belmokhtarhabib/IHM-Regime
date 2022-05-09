@@ -85,6 +85,7 @@ public class AjoutPlat extends AppCompatActivity {
                     nomPlat = "Plat";
                 }
                 StorageManager.saveBitmapToStorage(getApplicationContext(), picture, new File(externalPrimaryDirectory, nomPlat + "_GoToSlim"));
+                Toast.makeText(getApplicationContext(), "Photo sauvegardée !", Toast.LENGTH_LONG).show();
             }
 
         });
