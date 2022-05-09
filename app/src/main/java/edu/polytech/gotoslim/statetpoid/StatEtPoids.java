@@ -30,7 +30,7 @@ public class StatEtPoids extends AppCompatActivity {
         Controller_StatEtPoids controller = new Controller_StatEtPoids();
 
         Model_StatEtPoids model = new Model_StatEtPoids(controller);
-        View_StatEtPoids vue = new View_StatEtPoids(controller,model,(ConstraintLayout) findViewById(R.id.stat_poids));
+        View_StatEtPoids vue = new View_StatEtPoids(controller,model,findViewById(R.id.stat_poids));
         controller.setView(vue);
 
         model.addObserver(vue);
