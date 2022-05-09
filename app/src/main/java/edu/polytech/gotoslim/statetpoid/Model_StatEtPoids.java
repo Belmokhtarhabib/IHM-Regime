@@ -1,21 +1,17 @@
 package edu.polytech.gotoslim.statetpoid;
 
-import android.graphics.ColorSpace;
-
 import java.util.Observable;
 
 public class Model_StatEtPoids extends Observable {
     private static final int POIDS_ORIGINE = 90;
-    private Controller_StatEtPoids controle;
 
     private int taille;
     private int poids;
     private int imc;
     private int poidPerdu;
 
-    public Model_StatEtPoids(Controller_StatEtPoids controller_statEtPoids){
+    public Model_StatEtPoids(){
         super();
-        this.controle = controller_statEtPoids;
         this.taille = 186;
         this.poids = 90;
         this.imc = Imc(taille,poids);

@@ -12,14 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
+import java.util.Objects;
 
 import edu.polytech.gotoslim.Header;
 import edu.polytech.gotoslim.MainActivity;
 import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.RequestApi.ApiRecette;
 import edu.polytech.gotoslim.RequestApi.Plat;
-import edu.polytech.gotoslim.RequestApi.RequestThread;
 import edu.polytech.gotoslim.ajoutplat.AjoutPlat;
 
 import edu.polytech.gotoslim.R;
@@ -37,7 +36,7 @@ public class RecherchePlat extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_recherche_plat);
 
         Header.setHeader(getSupportFragmentManager());
@@ -54,7 +53,7 @@ public class RecherchePlat extends AppCompatActivity {
 
             try {
                 this.json = ApiRecette.getJSONRecette(inputString);
-                System.out.println(json.toString());
+                System.out.println(json);
                 setContentView(R.layout.activity_afficher_plat);
                 findViewById(R.id.settings).setOnClickListener(vv-> startActivity(new Intent(RecherchePlat.this, ParametresActivity.class)));
                 findViewById(R.id.home).setOnClickListener(vv-> startActivity(new Intent(RecherchePlat.this, MainActivity.class)));

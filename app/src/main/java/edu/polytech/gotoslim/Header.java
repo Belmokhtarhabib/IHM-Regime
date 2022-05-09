@@ -1,6 +1,5 @@
 package edu.polytech.gotoslim;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,9 +9,6 @@ import androidx.fragment.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import edu.polytech.gotoslim.conseil.listCreation.Ilistener;
-import edu.polytech.gotoslim.conseil.listCreation.Meal;
 
 public class Header extends Fragment{
 

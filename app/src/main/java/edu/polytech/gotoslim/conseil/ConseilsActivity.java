@@ -11,9 +11,9 @@ import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 import edu.polytech.gotoslim.Header;
-import edu.polytech.gotoslim.MainActivity;
-import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
 
 public class ConseilsActivity extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class ConseilsActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_conseils);
 
         Header.setHeader(getSupportFragmentManager());

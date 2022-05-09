@@ -5,8 +5,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.Observable;
 import java.util.Observer;
 
@@ -23,7 +21,7 @@ public class View_StatEtPoids implements Observer {
     public EditText inputPoids;
     public EditText inputTaille;
 
-    private Button bouttonMAJ;
+    private final Button bouttonMAJ;
 
     public View_StatEtPoids(Controller_StatEtPoids controller,Model_StatEtPoids model, ViewGroup app){
         this.controller=controller;

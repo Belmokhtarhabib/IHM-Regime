@@ -14,10 +14,6 @@ public class AfficherPlatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
     }
 
-    public JSONObject getItemRecup() {
-        return itemRecup;
-    }
-
     public void setItemRecup(JSONObject itemRecup) {
         this.itemRecup = itemRecup;
     }

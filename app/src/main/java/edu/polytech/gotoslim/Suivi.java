@@ -1,13 +1,11 @@
 package edu.polytech.gotoslim;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.ViewGroup;
 import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.polytech.gotoslim.ajoutplat.AjoutPlat;
+import java.util.Objects;
 
 public class Suivi extends AppCompatActivity {
 
@@ -16,7 +14,7 @@ public class Suivi extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_suivi);
 
         Header.setHeader(getSupportFragmentManager());

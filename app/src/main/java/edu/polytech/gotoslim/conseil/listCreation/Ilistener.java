@@ -1,5 +1,5 @@
 package edu.polytech.gotoslim.conseil.listCreation;
 
 public interface Ilistener {
-    public void onClick(Meal item);
+    void onClick(Meal item);
 }

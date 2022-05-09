@@ -12,8 +12,6 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,11 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import edu.polytech.gotoslim.R;
 import edu.polytech.gotoslim.conseil.listCreation.Ilistener;
 import edu.polytech.gotoslim.conseil.listCreation.Meal;
-import edu.polytech.gotoslim.conseil.listCreation.MealAdapter;
 import edu.polytech.gotoslim.conseil.listCreation.basedonne.DataBase;
-import edu.polytech.gotoslim.conseil.listCreation.basedonne.UrlRecette;
-import edu.polytech.gotoslim.conseil.listCreation.lists.FactoryList;
-import edu.polytech.gotoslim.conseil.listCreation.lists.MealList;
 
 public class MealRecipe extends Fragment implements Ilistener {
 
@@ -62,7 +56,7 @@ public class MealRecipe extends Fragment implements Ilistener {
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         this.createCallbackToParentActivity();
     }
@@ -71,7 +65,7 @@ public class MealRecipe extends Fragment implements Ilistener {
         try {
             mCallback = (Ilistener) getActivity();
         } catch (ClassCastException e) {
-            throw new ClassCastException(e.toString()+ " must implement OnButtonClickedListener");
+            throw new ClassCastException(e + " must implement OnButtonClickedListener");
         }
     }
 

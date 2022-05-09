@@ -3,15 +3,14 @@ package edu.polytech.gotoslim;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.view.Window;
 import android.os.Bundle;
 
-import edu.polytech.gotoslim.RequestApi.RequestThread;
 import edu.polytech.gotoslim.conseil.ConseilsActivity;
 import android.widget.ProgressBar;
 
-import edu.polytech.gotoslim.recherchePlat.AfficherPlatActivity;
+import java.util.Objects;
+
 import edu.polytech.gotoslim.recherchePlat.RecherchePlat;
 import edu.polytech.gotoslim.statetpoid.StatEtPoids;
 import edu.polytech.gotoslim.succes.Succes;
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.settings).setOnClickListener(v1-> startActivity(new Intent(MainActivity.this, ParametresActivity.class)));

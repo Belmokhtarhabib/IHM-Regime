@@ -5,18 +5,15 @@ import android.os.Bundle;
 import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
+
+import java.util.Objects;
 
 import edu.polytech.gotoslim.Header;
-import edu.polytech.gotoslim.MainActivity;
-import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
 import edu.polytech.gotoslim.conseil.listCreation.Ilistener;
 import edu.polytech.gotoslim.conseil.listCreation.Meal;
 
 public class MealListActivity extends AppCompatActivity implements Ilistener {
-    private String type;
     private boolean isTab = false;
     MealRecipe mealRecipe;
 
@@ -24,7 +21,7 @@ public class MealListActivity extends AppCompatActivity implements Ilistener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_meal);
 
         Header.setHeader(getSupportFragmentManager());

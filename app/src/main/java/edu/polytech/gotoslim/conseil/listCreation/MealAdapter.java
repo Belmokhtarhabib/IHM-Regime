@@ -15,8 +15,8 @@ import edu.polytech.gotoslim.conseil.listCreation.lists.MealList;
 public class MealAdapter extends BaseAdapter {
 
     private Ilistener listener;
-    private MealList meal;
-    private LayoutInflater mInflater;
+    private final MealList meal;
+    private final LayoutInflater mInflater;
 
     public MealAdapter(Context context, MealList meal) {
         this.meal = meal;
@@ -45,9 +45,7 @@ public class MealAdapter extends BaseAdapter {
         tvName.setText(meal.get(position).getName());
         picture.setImageResource(meal.get(position).getPicture());
 
-        layoutItem.setOnClickListener( click -> {
-            listener.onClick(meal.get(position));
-        });
+        layoutItem.setOnClickListener( click -> listener.onClick(meal.get(position)));
 
         return layoutItem;
     }

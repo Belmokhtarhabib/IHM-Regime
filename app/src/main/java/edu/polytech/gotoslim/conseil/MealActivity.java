@@ -1,18 +1,13 @@
 package edu.polytech.gotoslim.conseil;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 
 import edu.polytech.gotoslim.Header;
-import edu.polytech.gotoslim.MainActivity;
-import edu.polytech.gotoslim.ParametresActivity;
 import edu.polytech.gotoslim.R;
 import edu.polytech.gotoslim.conseil.listCreation.Ilistener;
 import edu.polytech.gotoslim.conseil.listCreation.Meal;

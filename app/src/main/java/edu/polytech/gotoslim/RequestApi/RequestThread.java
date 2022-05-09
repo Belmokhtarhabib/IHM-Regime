@@ -1,5 +1,6 @@
 package edu.polytech.gotoslim.RequestApi;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 
 import org.json.JSONObject;
@@ -8,6 +9,7 @@ import edu.polytech.gotoslim.recherchePlat.AfficherPlatActivity;
 
 public class RequestThread extends AsyncTask<String, Void, JSONObject> {
 
+    @SuppressLint("StaticFieldLeak")
     AfficherPlatActivity activity;
 
     public RequestThread(AfficherPlatActivity activity){

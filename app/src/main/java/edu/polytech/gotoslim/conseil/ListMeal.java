@@ -3,6 +3,7 @@ package edu.polytech.gotoslim.conseil;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -38,7 +39,7 @@ public class ListMeal extends Fragment implements Ilistener {
         String type = requireActivity().getIntent().getExtras().getString("typeMeal");
         MealList meals = (new FactoryList()).createList(type);
 
-        MealAdapter adapter = new MealAdapter(getContext().getApplicationContext(), meals);
+        MealAdapter adapter = new MealAdapter(requireContext().getApplicationContext(), meals);
 
         ListView list = result.findViewById(R.id.listViewMeal);
         list.setAdapter(adapter);
@@ -48,7 +49,7 @@ public class ListMeal extends Fragment implements Ilistener {
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         this.createCallbackToParentActivity();
     }
@@ -57,7 +58,7 @@ public class ListMeal extends Fragment implements Ilistener {
         try {
             mCallback = (Ilistener) getActivity();
         } catch (ClassCastException e) {
-            throw new ClassCastException(e.toString()+ " must implement OnButtonClickedListener");
+            throw new ClassCastException(e + " must implement OnButtonClickedListener");
         }
     }
 

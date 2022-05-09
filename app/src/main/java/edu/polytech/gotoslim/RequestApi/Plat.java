@@ -14,7 +14,6 @@ public class Plat {
     public String nom;
     public ArrayList<Nutriment> listNut;
 
-    private DrawableFromURL toDraw;
     public ImageView image;
 
     // a la creation du plat, passer en parametre pour l'image un findViewById de l'id de l'image
@@ -26,7 +25,7 @@ public class Plat {
         this.image = imageView;
         parseNutri(nutriment);
 
-        toDraw = new DrawableFromURL(image);
+        DrawableFromURL toDraw = new DrawableFromURL(image);
         toDraw.execute(imageUrl);
     }
 
