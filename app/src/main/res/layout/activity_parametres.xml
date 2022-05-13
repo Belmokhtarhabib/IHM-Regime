@@ -25,7 +25,7 @@
       android:id="@+id/buttonModifierMonRegime"
       android:layout_width="263dp"
       android:layout_height="36dp"
-      android:text="@string/modifier_mon_regime"
+      android:text="Organiser Mon régime"
       tools:ignore="MissingConstraints" />
 
   <Switch
