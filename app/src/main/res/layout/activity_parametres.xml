@@ -5,6 +5,7 @@
     tools:context=".ParametresActivity"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
   <FrameLayout
@@ -25,7 +26,7 @@
       android:id="@+id/buttonModifierMonRegime"
       android:layout_width="263dp"
       android:layout_height="36dp"
-      android:text="@string/modifier_mon_regime"
+      android:text="Organiser mon regime"
       tools:ignore="MissingConstraints" />
 
   <Switch
@@ -33,11 +34,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="28dp"
+      android:checked="false"
       android:switchMinWidth="100dp"
       android:switchPadding="20dp"
       android:text="@string/mode_sombre"
       android:textSize="30sp"
-      android:checked="false"
       tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 
